@@ -1,11 +1,11 @@
-# revision 28002
+# revision 30704
 # category Package
 # catalog-ctan /macros/latex/contrib/loops
-# catalog-date 2012-10-15 16:33:02 +0200
+# catalog-date 2013-05-16 16:49:13 +0200
 # catalog-license lppl1.3
-# catalog-version 1.1
+# catalog-version 1.3
 Name:		texlive-loops
-Version:	1.1
+Version:	1.3
 Release:	1
 Summary:	General looping macros for use with LaTeX
 Group:		Publishing
@@ -21,7 +21,7 @@ Requires(post):	texlive-kpathsea
 %description
 The package provides efficient looping macros for processing
 both csv (separated-values) and nsv/tsv (non-separated values)
-lists. Csv lists which have associated parsers may be processed
+lists. CSV lists which have associated parsers may be processed
 with the tools of the package.
 
 %post
@@ -36,6 +36,7 @@ with the tools of the package.
 %files
 %{_texmfdistdir}/tex/latex/loops/loops.sty
 %doc %{_texmfdistdir}/doc/latex/loops/README
+%doc %{_texmfdistdir}/doc/latex/loops/loops-pokayoke1.tex
 
 #-----------------------------------------------------------------------
 %prep
