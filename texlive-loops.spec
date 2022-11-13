@@ -1,18 +1,12 @@
-# revision 30704
-# category Package
-# catalog-ctan /macros/latex/contrib/loops
-# catalog-date 2013-05-16 16:49:13 +0200
-# catalog-license lppl1.3
-# catalog-version 1.3
 Name:		texlive-loops
-Version:	1.3
-Release:	11
+Version:	30704
+Release:	1
 Summary:	General looping macros for use with LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/loops
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/loops.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/loops.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/loops.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/loops.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ lists. CSV lists which have associated parsers may be processed
 with the tools of the package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -40,7 +34,7 @@ with the tools of the package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
