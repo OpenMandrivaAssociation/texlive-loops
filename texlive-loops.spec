@@ -3,7 +3,7 @@ Version:	30704
 Release:	2
 Summary:	General looping macros for use with LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/loops
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/loops
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/loops.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/loops.doc.r%{version}.tar.xz
